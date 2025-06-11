@@ -4,3 +4,52 @@
   transition: background-color 200ms linear;
   box-shadow: 0 2px 4px rgba(0,0,0,.1);
 }
+
+#contact-form-section {
+  padding-top: 3rem; // Add some top padding to the section
+  padding-bottom: 3rem; // Add some bottom padding to the section
+  // background-color: #f8f9fa; // Optional: a light background for the section, matches --bs-gray-100
+  // border-top: 1px solid #dee2e6; // Optional: a top border for separation, matches --bs-gray-300
+}
+
+#contact-form-section h2 {
+  // The existing display-4, fw-bold, mb-5 classes from HTML are likely sufficient.
+  // color: #212529; // Theme's --bs-body-color
+}
+
+.form-label {
+  font-weight: 500; // Medium font weight for labels
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  border-radius: 0.25rem; // Slightly rounded corners, matches --bs-border-radius-sm
+  padding: 0.75rem 1rem;  // Comfortable padding
+  margin-bottom: 1rem; // Space below each input
+  border: 1px solid #ced4da; // Standard border, matches --bs-gray-400
+
+  &:focus {
+    border-color: #8a8a8a; // Theme's form control focus border color
+    box-shadow: 0 0 0 0.25rem rgba(21, 21, 21, 0.25); // Theme's form control focus shadow (--bs-primary-rgb)
+  }
+}
+
+textarea.form-control {
+  min-height: 120px; // Ensure textarea has a decent default height
+}
+
+.btn-primary {
+  // Theme --bs-primary is #151515 (black)
+  // Bootstrap .btn-primary uses this by default.
+  // Adding padding and font-size for a more prominent button.
+  padding: 0.75rem 1.5rem; // Generous padding
+  font-size: 1rem;
+  // border-radius: 0.25rem; // Consistent with inputs, though theme default is 0px for buttons
+
+  // Hover/active states are handled by Bootstrap using theme variables.
+  // Example of explicit override if needed:
+  // &:hover {
+  //   background-color: #121212; // Slightly lighter black from theme --bs-btn-hover-bg for btn-primary
+  //   border-color: #111111; // from theme --bs-btn-hover-border-color for btn-primary
+  // }
+}
